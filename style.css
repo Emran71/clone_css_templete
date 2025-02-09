@@ -263,3 +263,13 @@ body {
   color: #000000;
 
 }
+/* ########## CONTACT part end ##########  */
+
+/* ########## footer part ########## */
+.footer{
+  height: 50px;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
+}
