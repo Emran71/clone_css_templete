@@ -24,6 +24,7 @@ body {
 
 }
 
+
 .header a{
     display: flex;
     justify-content: space-between;
@@ -35,13 +36,230 @@ body {
 .header ul{
     list-style-type: none;
 }
-.header .navbar1{
-   font-size: 16px;
-   font-weight: 600;
 
+.subnav {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .subnav .subnavbtn {
+    font-size: 23px;  
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    margin: 0;
+    background-color: #FFFFFF;
+    font-weight: 600;
+  }
+  
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: #eee;
+  }
+  
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 240px;
+    width: 140px;
+    z-index: 1;
+  }
+  
+  .subnav-content a {
+    float: left;
+    text-decoration: none;
+  }
+  
+  .header a:hover {
+    background-color: #eee;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: flex;
+    flex-direction: column;
+  }
+.header .navbar1{
+   font-size: 22px;
+   font-weight: 600;
 }
+.header .navbar2{
+    font-size: 22px;
+ }
 .logo{
     font-size: 40px;
     font-weight: 600;
     text-align: center;
+}
+
+
+/* #################### main part #################### */
+.content{
+  margin-left: 8px;
+  margin-right: 20px;
+}
+/* #################### header part #################### */
+.icon-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+/* #################### header part end  #################### */
+
+
+/* #################### collection part #################### */
+.image-portion{
+  background-image: url("images/jeans.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+.image-content{
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+.btn{
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #b60f0f;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ffffff;
+}
+.btn:hover{
+  background-color: #bbbbbb;
+  color: #000000;
+}
+#new-arrival{
+  font-size: 70px;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(214, 84, 84);
+}
+#collection-contents{
+  font-size: 50px;
+  font-weight: 600;
+  color: rgb(214, 84, 84);
+  background-color: turquoise;
+}
+
+.items-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.item img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.item h3{
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+.item p{
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 2px;
+}
+.item button{
+  padding: 10px 20px;
+  margin-top: 2px;
+  background-color: #000000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ffffff;
+}
+.item button:hover{
+  background-color: #bbbbbb;
+  color: #000000;
+}
+/* #################### collection part end #################### */
+
+/* ########## Subscribe part ########## */
+.subscribed{
+  background-color: #000000;
+  position: relative;
+  .sub_head{
+    font-size: 40px;
+    color: #ffffff;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  #para{
+    font-size: 20px;
+    color: #ffffff;
+    margin-left: 10px;
+    
+  }
+  #email{
+    margin-left: 10px;
+    padding: 10px 20px;
+    width: 90%;
+  }
+  .btn{
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+}
+/* ########## Subscribe part end ########## */
+
+/* ########## CONTACT part ########## */
+/* ############ first part ############ */
+.contact{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  
+  gap: 20px;
+  margin-top: 10px;
+  background-color: #F1F1F1;
+
+}
+.first{
+  height: 100%;
+  padding: 20px;
+}
+.first h2{
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+.first p{
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.first input{
+  padding: 10px 20px;
+  margin-top: 10px;
+  width: 80%;
+}
+/* ############ second part ############ */
+.second a{
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #000000;
+
 }

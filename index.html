@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commarce website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,16 +15,16 @@
             <div class="navbar1">
                 <div><a href="#">Shirts</a></div>
                 <div><a href="#">Dresses</a></div>
-                <div>
-                    <a href="#">Jeans
-                    <i class='bx bxs-down-arrow'></i>
-                    <ul class="html-sub-menu">
-                        <li><a href="#">Skinny</a></li>
-                        <li><a href="#">Ralaxed</a></li>
-                        <li><a href="#">Bootcut</a></li>
-                    </ul>
-                    </a>
-                    
+                <div class="subnav">
+                    <button class="subnavbtn">Jeans 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="subnav-content">
+                      <a href="#">Skinny</a>
+                      <a href="#">Relaxed</a>
+                      <a href="#">Bootcut</a>
+                      <a href="#">Straight</a>
+                    </div>
                 </div>
                 <div><a href="#">Jackets</a></div>
                 <div><a href="#"> Gymwear</a></div>
@@ -40,9 +39,140 @@
             </div>
 
         </div>
+<!-- ####### End of header section ####### -->
 
-
-        <div class="content"></div>
+ <!-- ########## Start of content section ########## -->
+        <div class="content">
+            <!-- ########### first portion ########### -->
+            <div class="icon-part">
+                <div class="text">Jeans</div>
+                <div class="icon">
+                    <i class="fa fa-shopping-cart w3-margin-right"></i>
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+            <!-- ########### image portion ########### -->
+             <div class="image-portion">
+                <div class="image-content">
+                    <p id="new-arrival">New Arrivals</p>
+                    <p id="collection-contents">Collection 2025</p>
+                    <button class="btn">SHOP NOW</button>
+                </div>
+             </div>
+             <!-- #############item part########## -->
+              <br>
+            <div>8 items</div>
+            <div class="items-container">
+                            <div class="item">
+                                <img src="images/jeans1.jpg" alt="">
+                                <div class="item-content">
+                                    <p>Ripped Skinny Jeans</p>
+                                    <p>Price: $50.00</p>
+                                    <button>Shop Now</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/jeans2.jpg" alt="">
+                                <div class="item-content">
+                                    <p>Mega Ripped Jeans</p>
+                                    <p>Price: $50.00</p>
+                                    <button>Shop Now</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/jeans3.jpg" alt="">
+                                <div class="item-content">
+                                    <p>Washed Skinny Jeans</p>
+                                    <p>Price: $40.00</p>
+                                    <button>Shop Now</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/jeans4.jpg" alt="">
+                                <div class="item-content">
+                                    <p>Washed Skinny Jeans</p>
+                                    <p>Price: $25.30</p>
+                                    <button>Shop Now</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/jeans1.jpg" alt="">
+                                <div class="item-content">
+                                    <p>Ripped Skinny Jeans</p>
+                                    <p>Price: $45.00</p>
+                                    <button>Shop Now</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/jeans2.jpg" alt="">
+                                <div class="item-content"> 
+                                    <p>Washed Skinny Jeans</p>
+                                    <p>Price: $29.22</p>
+                                    <button>Shop Now</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/jeans3.jpg" alt="">
+                                <div class="item-content">
+                                    <p>Mega Ripped Jeans</p>
+                                    <p>Price: $24.59</p>
+                                    <button>Shop Now</button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/jeans4.jpg" alt="">
+                                <div class="item-content">
+                                    <p>Ripped Skinny Jeans</p>
+                                    <p>Price: $40</p>
+                                    <button>Shop Now</button>
+                                </div>
+                            </div>
+                </div>
+              <!-- ################# End of item part ################# -->
+              
+              <!-- ################# Subscribed part ################# -->
+               <div class="subscribed">
+                   <p class="sub_head">Subscribe</p>
+                   <p id="para">To get special offers and VIP treatment:</p>
+                   <input type="text" placeholder="Enter your Email" id="email">
+                   <br>
+                    <button class="btn">Subscribe</button>
+               </div>
+             <!-- ############# End of Subscribed part ############# -->
+                <div class="contact">
+                        <div class="first">
+                            <h2>Contact</h2>
+                            <p>Questions? Go ahead.</p>
+                            <input type="text" placeholder="Name" class="input"><br>
+                            <input type="text" placeholder="Email" class="input"> <br>
+                            <input type="text" placeholder="Message" class="input"><br>
+                            <button class="btn">Send</button>
+                        </div>
+                        <div class="second">
+                            <div><h2>About</h2></div>
+                            <div><a href="#">About Us</a></div>
+                            <div><a href="#">We're hiring</a></div>
+                            <div><a href="#">Support</a></div>
+                            <div><a href="#">Find store</a></div>
+                            <div><a href="#">Shipment</a></div>
+                            <div><a href="#">Payment</a></div>
+                            <div><a href="#">Gift card</a></div>
+                            <div><a href="#">Return</a></div>
+                            <div><a href="#">Help</a></div>
+                        </div>
+                        <div class="third">
+                            <h2>Store</h2>
+                            <p><i class="fa fa-fw fa-map-marker"></i>Company Name</p>
+                            <p><i class="fa fa-fw fa-phone"></i>Call Us: +123456789</p>
+                            <p><i class="fa fa-fw fa-envelope"></i>Email:tryfootwaer@gmail.com</p>
+                            <h3>We accept</h3>
+                            <p><i class="fa fa-fw fa-cc-amex"></i>Amex</p>
+                            <p><i class="fa fa-fw fa-credit-card"></i>Visa</p>
+                            <p><i class="fa fa-fw fa-cc-mastercard"></i>Mastercard</p>
+                        </div>
+                 </div>                
+            </div>
+        </div>
     </div>
 </body>
 </html>
